@@ -14,4 +14,11 @@
 - Search engines friendly
 - UEX optimisation
 
-#Works on latest IE, Chrome, Safari, Safari Mobile, Firefox and all modern browsers.  
+#Works on latest IE, Chrome, Safari, Safari Mobile, Firefox and all modern browsers.
+
+
+## installation
+- yarn
+
+## Run
+- npm start
