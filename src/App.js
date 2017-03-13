@@ -15,6 +15,7 @@ class App extends Component {
             isOpen: props.isOpen,
             hideImage: false
         }
+
         // bind all the events in constructor
         this.next = this.next.bind(this);
         this.prev = this.prev.bind(this);
@@ -31,6 +32,10 @@ class App extends Component {
                     current: prevState.current++
                 }
             );
+
+            this.setState({
+                hideImage: false
+            })
         }
     }
 
@@ -43,7 +48,12 @@ class App extends Component {
                     current: prevState.current--
                 }
             );
+
+            this.setState({
+                hideImage: false
+            })
         }
+
     }
 
     /**
