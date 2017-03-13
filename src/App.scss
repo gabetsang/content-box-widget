@@ -1,0 +1,95 @@
+.widget {
+  font-family: Arial;
+  font-size: 12px;
+  overflow: hidden;
+  max-width: 730px;
+  box-shadow: 3px 2px 5px 0px rgba(209,207,209,1);
+}
+
+
+.content {
+  width: 100%;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+
+  .wrapper {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #e6e7df;
+    min-height: 195px;
+  }
+
+  .footer {
+    border-radius:  0 0 5px 5px;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    div {
+      &:hover {
+        cursor: pointer;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .glyphicon {
+        font-size: large;
+        padding: 0 10px;
+      }
+    }
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+img {
+  height: 154px;
+  margin-right: 20px;
+}
+
+.slide-up {
+   height: 0;
+}
+
+.header {
+  border-radius:  5px 5px  0 0;
+  width: 100%;
+  height: 50px;
+  padding: 20px 15px;
+  background: linear-gradient(to right, #eaead0,#c7c7a5);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  .right {
+    &:hover {
+      cursor: pointer;
+    }
+    .glyphicon {
+      font-size: smaller;
+    }
+  }
+  .glyphicon-file {
+    font-size: large;
+  }
+}
+
+.glyphicon, a {
+  color: #478405;
+}
+
+a {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  img {
+    margin: auto;
+  }
+}
