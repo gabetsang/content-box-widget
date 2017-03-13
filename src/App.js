@@ -134,7 +134,11 @@ class App extends Component {
 App.propTypes = {
     isOpen: PropTypes.bool.isRequired,
     current: PropTypes.number.isRequired,
-    content: PropTypes.array.isRequired,
+    content: PropTypes.arrayOf(PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        thumbnail : PropTypes.string,
+        description: PropTypes.string.isRequired
+    })),
     title: PropTypes.string.isRequired
 }
 
